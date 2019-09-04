@@ -1,0 +1,31 @@
+// COLORS
+
+$color-white: #FFF;
+$color-black: #000000;
+
+$color-signifly-red: #E23D31;
+$color-signifly-blue: #90E3B6;
+$color-signifly-dark-blue: #091426;
+$color-signifly-purple: #4334A8;
+$color-signifly-yellow: #F6C16A;
+$color-signify-pink: #F8E3EF;
+
+
+
+@import "~vue-material/dist/theme/engine"; // Import the theme engine
+
+@include md-register-theme("default", (
+  primary: #000000, // The primary color of your brand
+  accent: #E23D31, // The secondary color of your brand
+));
+
+
+@import "~vue-material/dist/theme/all"; // Apply the theme
+
+
+
+// FONT 
+
+$default-font-size: 1.6rem;
+
+
