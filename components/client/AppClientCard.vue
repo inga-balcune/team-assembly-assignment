@@ -8,7 +8,7 @@
         </md-card-header-text>
 
         <md-card-media v-if='logo'>
-          <img :src="logo" alt="People">
+          <img :src="logo" :alt="`${client} logo`">
         </md-card-media>
       </md-card-header>
 

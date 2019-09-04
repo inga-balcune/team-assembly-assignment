@@ -8,7 +8,7 @@
         </md-card-header-text>
 
         <md-card-media v-if='image'>
-          <img :src="image" alt="People">
+          <img :src="image" :alt="`${name} ${surname} image`">
         </md-card-media>
       </md-card-header>
 

@@ -1,7 +1,7 @@
 {
-  "name": "signifly",
+  "name": "team-assembly",
   "version": "1.0.0",
-  "description": "My Signifly internship assignment",
+  "description": "Signifly team assembly front-end web development assignment",
   "author": "Inga Balcune",
   "private": true,
   "scripts": {
