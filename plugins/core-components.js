@@ -14,6 +14,7 @@ import AppEmployeeIdCard from '@/components/projectId/AppEmployeeIdCard'
 import AppProjectIdList from '@/components/projectId/AppProjectIdList'
 import AppProjectIdCard from '@/components/projectId/AppProjectIdCard'
 import AppDashboardCard from '@/components/dashboard/AppDashboardCard'
+import AppEmptyState from '@/components/dashboard/AppEmptyState'
 
 Vue.component('AppNav', AppNav)
 Vue.component('AppEmployeeForm', AppEmployeeForm)
@@ -30,6 +31,7 @@ Vue.component('AppEmployeeIdCard', AppEmployeeIdCard)
 Vue.component('AppProjectIdList', AppProjectIdList)
 Vue.component('AppProjectIdCard', AppProjectIdCard)
 Vue.component('AppDashboardCard', AppDashboardCard)
+Vue.component('AppEmptyState', AppEmptyState)
 
 
 
