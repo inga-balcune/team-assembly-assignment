@@ -1,7 +1,7 @@
 <template>
   <div>
     <md-tabs md-alignment="centered" class='admin-section'>
-      <md-tab id="tab-home" md-label="Dashboard">
+      <md-tab v-if='team.length > 0 && clients.length > 0 && projects.length > 0' id="tab-home" md-label="Dashboard">
         <section class="md-layout md-gutter md-alignment-center dashboard-card-warapper">
           <AppDashboardCard v-if='team.length > 0' title='Team Members' :count='team.length' icon='assignment_ind'
                             class="md-layout-item md-xlarge-size-25 md-large-size-33 md-medium-size-33 md-small-size-50 md-xsmall-size-100"/>
