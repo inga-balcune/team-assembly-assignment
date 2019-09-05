@@ -49,8 +49,12 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@bazzite/nuxt-optimized-images'
   ],
+  optimizedImages: {
+    optimizeImages: true
+  },
   styleResources: {
     scss: [
       'assets/sass/abstracts/_functions.scss',
