@@ -86,18 +86,16 @@ export default {
       this.project = this.projects.filter(project => project.title.replace(/ +/g, '-').toLowerCase().includes(this.$route.params.id))
     },
     findProjectManager() {
-      let pm = this.project.map(a => a.projectManager).join()
+      let pm = this.project.map(data => data.projectManager).join()
       this.projectManager = this.team.filter(member => member.id.includes(pm))
     },
     findClient() {
-      let projectClient = this.project.map(a => a.client).join()
-      console.log(projectClient)
+      let projectClient = this.project.map(data => data.client).join()
       this.client = this.clients.filter(client => client.id.includes(projectClient))
     },
     findProjectTeam() {
-      let projectTeam = this.project.map(a => a.selectedTeam)
+      let projectTeam = this.project.map(data => data.selectedTeam)
       this.projectTeam = this.team.filter(member => projectTeam[0].includes(member.id))
-      
     }
   },
 }

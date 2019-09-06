@@ -36,8 +36,8 @@ export default {
         required: true
       },
       logo: {
-        // type: String,
-        // required: true
+        type: String,
+        required: true
       },
       id: {
         type: String,

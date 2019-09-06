@@ -98,7 +98,6 @@ export default {
 <style lang="scss" scoped>
 
 .projectURL {
-  // width: .0001%;
   opacity: 0;
 }
 

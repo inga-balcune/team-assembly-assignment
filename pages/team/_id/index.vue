@@ -91,12 +91,7 @@ export default {
     },
     findProjects() {
       this.pmInProjects = this.projects.filter(project => project.projectManager.includes(this.employeeId))
-
-      // let projectTeam = this.projects.filter(project => project.selectedTeam.filter(member => member.includes(this.employeeId)))
       this.otherProjects = this.projects.filter(project => project.selectedTeam.includes(this.employeeId))
-      // console.log(projectTeam)
-      
- 
     }
   }
 }

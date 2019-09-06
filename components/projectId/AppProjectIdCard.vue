@@ -54,19 +54,9 @@ export default {
       projectLink() {
         return `admin/project/${this.id}`
       },
-      copyURL() {
-        let copyURL = document.getElementById(`${this.id}-projectURL`);
-        copyURL.select()
-        copyURL.setSelectionRange(0, 99999)
-        document.execCommand("copy");
-        alert("Copied the text: " + copyURL.value);
-      },
       getClientName() {
-        const newClient = this.clients.filter(client => client.id.includes(this.client))
-        this.clientName = newClient[0].client
-        
-        console.log(this.clientName)
-        // this.clientName = newClient[0].client
+        const clientName = this.clients.filter(client => client.id.includes(this.client))
+        this.clientName = clientName[0].client
       }
     },
     mounted() {

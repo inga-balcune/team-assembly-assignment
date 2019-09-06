@@ -13,7 +13,6 @@ export default {
   },
   async asyncData({ $axios, params }) {
     const data = await $axios.$get(`https://signifly-assignment.firebaseio.com/team/${params.memberId}.json`)
-    console.log(data)
     return {loadedEmployee: data}
   },
   methods: {

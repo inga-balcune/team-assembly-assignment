@@ -13,7 +13,6 @@ export default {
   },
   async asyncData({ $axios, params }) {
     const data = await $axios.$get(`https://signifly-assignment.firebaseio.com/client/${params.clientId}.json`)
-    console.log(data)
     return {loadedClient: data}
   },
   methods: {

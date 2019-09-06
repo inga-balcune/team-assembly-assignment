@@ -33,13 +33,11 @@ export default {
 .md-layout-item {
     margin-top: .8rem;
     margin-bottom: .8rem;
-    // transition: .3s $md-transition-stand-timing;
 
     &:after {
       width: 100%;
       height: 100%;
       display: block;
-      // background: md-get-palette-color(purple, 200);
       content: " ";
     }
   }
