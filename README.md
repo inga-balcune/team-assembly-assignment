@@ -1,6 +1,6 @@
 # signifly
 
-> My Signifly internship assignment
+> My Signifly front-end web development assignment
 
 ## Build Setup
 
