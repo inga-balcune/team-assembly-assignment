@@ -13,8 +13,10 @@ import AppEmployeeIdList from '@/components/projectId/AppEmployeeIdList'
 import AppEmployeeIdCard from '@/components/projectId/AppEmployeeIdCard'
 import AppProjectIdList from '@/components/projectId/AppProjectIdList'
 import AppProjectIdCard from '@/components/projectId/AppProjectIdCard'
+import AppProjectClientCard from '@/components/projectId/AppProjectClientCard'
 import AppDashboardCard from '@/components/dashboard/AppDashboardCard'
 import AppEmptyState from '@/components/dashboard/AppEmptyState'
+import AppDashboardTabs from '@/components/dashboard/AppDashboardTabs'
 
 Vue.component('AppNav', AppNav)
 Vue.component('AppEmployeeForm', AppEmployeeForm)
@@ -30,8 +32,10 @@ Vue.component('AppEmployeeIdList', AppEmployeeIdList)
 Vue.component('AppEmployeeIdCard', AppEmployeeIdCard)
 Vue.component('AppProjectIdList', AppProjectIdList)
 Vue.component('AppProjectIdCard', AppProjectIdCard)
+Vue.component('AppProjectClientCard', AppProjectClientCard)
 Vue.component('AppDashboardCard', AppDashboardCard)
 Vue.component('AppEmptyState', AppEmptyState)
+Vue.component('AppDashboardTabs', AppDashboardTabs)
 
 
 

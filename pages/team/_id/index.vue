@@ -78,11 +78,13 @@ export default {
   },
   methods: {
     findEmployee() {
+
+      // extract name and surname from the params
       const nameArray = this.$route.params.id.split("-")
       const name = nameArray.shift()
       const surname = nameArray.pop()
      
-    // find employee 
+    // find employee based on the employees name and surname
       this.employee = this.team.filter(member => member.firstName.toLowerCase().includes(name) && member.lastName.toLowerCase().includes(surname))
 
     // get employee id
@@ -90,7 +92,10 @@ export default {
       this.employeeId = employeeId.join()
     },
     findProjects() {
+     // where the employee is a project manager 
       this.pmInProjects = this.projects.filter(project => project.projectManager.includes(this.employeeId))
+
+    // other projects where the emloyee is involved
       this.otherProjects = this.projects.filter(project => project.selectedTeam.includes(this.employeeId))
     }
   }
