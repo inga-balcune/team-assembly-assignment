@@ -4,6 +4,9 @@
   "description": "Signifly team assembly front-end web development assignment",
   "author": "Inga Balcune",
   "private": true,
+  "engines": {
+    "node": "12.9.1"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
